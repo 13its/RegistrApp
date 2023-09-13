@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RegistrAPP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <ion-row>
+    <ion-col>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png"
+        alt="" alt="" height="100">
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col sizeMd="4" offsetMd="4">
+      <ion-card>
+        <ion-card-header>
+          <ion-title>Iniciar sesión</ion-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item lines="full">
+            <ion-label position="floating">Usuario</ion-label>
+            <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
+          </ion-item>
+          <ion-item lines="full">
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+          </ion-item>
+          <ion-row>
+            <ion-col>
+              <ion-button expand="full" (click)="IniciarSesion()">Iniciar sesión</ion-button>
+              <span>o</span>
+              <ion-button expand="full" color="danger" [routerLink]="['/recuperar-contrasena']">Recuperar contraseña
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

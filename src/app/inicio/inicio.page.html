@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RegistrAPP</ion-title>    
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarSesion()">Salir</ion-button>
+    </ion-buttons>
+    
+  </ion-toolbar>  
+</ion-header>
+
+<ion-content class="ion-text-center">
+  <ion-row>
+    <ion-col>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1200px-Logo_DuocUC.svg.png" 
+      alt="" height="100">
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <h1>Bienvenido: {{datos.usuario}}</h1>
+    </ion-col>
+  </ion-row>
+</ion-content>
