@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
+import {MatButtonModule} from '@angular/material/button'
+import {MatIconModule} from '@angular/material/icon'
+
 import { RecuperarContrasenaPageRoutingModule } from './recuperar-contrasena-routing.module';
 
 import { RecuperarContrasenaPage } from './recuperar-contrasena.page';
@@ -13,7 +16,9 @@ import { RecuperarContrasenaPage } from './recuperar-contrasena.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RecuperarContrasenaPageRoutingModule
+    RecuperarContrasenaPageRoutingModule,
+    MatButtonModule,
+    MatIconModule
   ],
   declarations: [RecuperarContrasenaPage]
 })

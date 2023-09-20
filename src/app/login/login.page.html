@@ -19,19 +19,19 @@
         </ion-card-header>
         <ion-card-content>
           <ion-item lines="full">
-            <ion-label position="floating">Usuario</ion-label>
-            <ion-input type="text" [(ngModel)]="user.usuario"></ion-input>
+            <!--<ion-label position="floating">Usuario</ion-label>-->
+            <ion-input label="Usuario:" type="text" [(ngModel)]="user.usuario"></ion-input>
           </ion-item>
           <ion-item lines="full">
-            <ion-label position="floating">Contraseña</ion-label>
-            <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+            <!--<ion-label position="floating">Contraseña</ion-label>-->
+            <ion-input label="Contraseña:" type="password" [(ngModel)]="user.password"></ion-input>
           </ion-item>
           <ion-row>
             <ion-col>
-              <ion-button expand="full" (click)="IniciarSesion()">Iniciar sesión</ion-button>
-              <span>o</span>
-              <ion-button expand="full" color="danger" [routerLink]="['/recuperar-contrasena']">Recuperar contraseña
-              </ion-button>
+              <!--<ion-button expand="full" (click)="IniciarSesion()">Iniciar sesión</ion-button>-->
+              <button mat-button color="primary" (click)="IniciarSesion()">Ingresar</button>              
+              <!--<ion-button expand="full" color="danger" [routerLink]="['/recuperar-contrasena']">Recuperar contraseña</ion-button>-->
+              <button mat-button color="warn" [routerLink]="['/recuperar-contrasena']">Recuperar contraseña</button>            
             </ion-col>
           </ion-row>
         </ion-card-content>

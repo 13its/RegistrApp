@@ -49,7 +49,7 @@ export class LoginPage implements OnInit {
       }
       else 
       {
-        this.presentAlert('Error', 'Usuario o contraseña incorrectos');
+        this.presentAlert('Error', 'Usuario y contraseña incorrectos');
       }
     }
     else

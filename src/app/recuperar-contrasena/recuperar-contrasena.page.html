@@ -22,12 +22,13 @@
         </ion-card-header>
         <ion-card-content>
           <ion-item lines="full">
-            <ion-label position="floating">Ingrese credenciales</ion-label>
-            <ion-input type="text" [(ngModel)]="usuario"></ion-input>
+            <!--<ion-label position="floating">Ingrese credenciales</ion-label>-->
+            <ion-input label="Ingrese usuario:" type="text" [(ngModel)]="usuario"></ion-input>
           </ion-item>          
           <ion-row>
             <ion-col>
-              <ion-button expand="full" (click)="recuperarPassword()">Recuperar contraseña</ion-button>              
+              <!--<ion-button expand="full" (click)="recuperarPassword()">Recuperar contraseña</ion-button>-->
+              <button mat-button color="warn" (click)="recuperarPassword()">Recuperar</button>             
             </ion-col>
           </ion-row>
         </ion-card-content>
