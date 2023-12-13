@@ -33,4 +33,8 @@ export class InicioPage implements OnInit {
     this.router.navigate(['/login'])
   }
 
+  registarAsistencia(){
+    this.router.navigate(['/registar-asistencia'])
+  }
+
 }
